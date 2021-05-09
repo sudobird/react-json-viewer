@@ -1,6 +1,6 @@
 {
   "name": "@sudobird/react-json-viewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A compact light weight collapsible React component to visualize JSON objects and Arrays with chrome console like UI in tree format!",
   "main": "dist/main.js",
   "scripts": {
@@ -44,7 +44,7 @@
     "react"
   ],
   "author": "sudobird",
-  "homepage": "https://github.com/sudobird/react-json-viewer/tree/master/react-json-viewer#readme",
+  "homepage": "https://github.com/sudobird/react-json-viewer",
   "repository": {
     "type": "git",
     "url": "https://github.com/sudobird/react-json-viewer.git"
