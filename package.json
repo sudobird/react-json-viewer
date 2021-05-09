@@ -1,53 +1,52 @@
 {
   "name": "@sudobird/react-json-viewer",
   "version": "1.0.0",
-  "description": "Collapsible JSON viewer react component with chrome developer tools console like UI.",
-  "author": "sudobird",
-  "license": "MIT",
-  "repository": "",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
-  "source": "src/index.js",
-  "engines": {
-    "node": ">=10"
-  },
+  "description": "A compact light weight collapsible React component to visualize JSON objects and Arrays with chrome console like UI in tree format!",
+  "main": "dist/main.js",
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s build",
-    "test": "run-s test:unit test:lint test:build",
-    "test:build": "run-s build",
-    "test:lint": "eslint .",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.dev.config.js",
+    "build": "webpack"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.2",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^4.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.28.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "to-string-loader": "^1.1.6",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.2",
+    "webpack-bundle-analyzer": "^3.7.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-node-externals": "^3.0.0"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.2",
+    "react-dom": "^16.0.2"
   },
-  "devDependencies": {
-    "microbundle-crl": "^0.13.10",
-    "babel-eslint": "^10.0.3",
-    "cross-env": "^7.0.2",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "gh-pages": "^2.2.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
-  },
-  "files": [
-    "dist"
-  ]
+  "keywords": [
+    "React JSON Viewer",
+    "collapsible JSON",
+    "JSON tree",
+    "array viewer",
+    "react"
+  ],
+  "author": "sudobird",
+  "homepage": "https://github.com/sudobird/react-json-viewer/tree/master/react-json-viewer#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sudobird/react-json-viewer.git"
+  }
 }

@@ -1,0 +1,64 @@
+@import '../variables';
+
+.json-tree-wrapper {
+  padding-left: 10px;
+
+  .default-value {
+    color: $defaultValue;
+  }
+  .string-value {
+    color: $string;
+  }
+  .number-value {
+    color: $number;
+  }
+  .boolean-value {
+    color: $bool;
+  }
+
+  .key {
+    color: $key;
+    position: relative;
+  }
+  .key.expandable {
+    cursor: pointer;
+  }
+  .key.close {
+    &::before {
+      color: $caret;
+      content: '\25B8';
+      position: absolute;
+      left: -8px;
+    }
+  }
+  .key.open {
+    &::before {
+      color: $caret;
+      content: '\25BE';
+      position: absolute;
+      left: -8px;
+    }
+  }
+
+  .collapsed-value {
+    color: $defaultValue;
+  }
+
+  .collapse {
+    &>.expanded-value {
+      display: none;
+    }
+    &>.collapsed-value {
+      display: inline;
+    }
+  }
+
+  .expand {
+    &>.expanded-value {
+      display: inline;
+    }
+    &>.collapsed-value {
+      display: none;
+    }
+  }
+}

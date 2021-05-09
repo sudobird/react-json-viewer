@@ -1,0 +1,12 @@
+@import './variables';
+
+.json-viewer-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-family: sans-serif;
+  overflow: auto;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: left;
+}

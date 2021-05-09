@@ -1,6 +1,6 @@
-import React from 'react'
-import styles from './styles.module.css'
+import React from 'react';
+import reactDom from 'react-dom';
+import JsonViewer from "./lib";
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+
+reactDom.render(<JsonViewer data={{name: {age: 90}}}/>, document.getElementById("root"));

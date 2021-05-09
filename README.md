@@ -1,30 +1,37 @@
-# @sudobird/react-json-viewer
+# React JSON Viewer
 
-> Collapsible JSON viewer react component with chrome developer tools console like UI.
+A compact light weight collapsible React component to visualize JSON objects and Arrays with chrome console like UI in tree format!
 
-[![NPM](https://img.shields.io/npm/v/@sudobird/react-json-viewer.svg)](https://www.npmjs.com/package/@sudobird/react-json-viewer) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-## Install
-
-```bash
-npm install --save @sudobird/react-json-viewer
+### Installation:
+```
+npm install @sudobird/react-json-viewer
 ```
 
-## Usage
+### Usage:
+```
+import JsonViewer from '@sudobird/react-json-viewer';
 
-```jsx
-import React, { Component } from 'react'
+<JsonViewer data={jsonObj} />
+```
 
-import MyComponent from '@sudobird/react-json-viewer'
-import '@sudobird/react-json-viewer/dist/index.css'
+### Example:
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+```
+const jsonData = {
+    name: "sudobird",
+    age: 99,
+    cities: ['abc', 'def', 'ghi'],
+    gender: 'M',
+    car: null,
+    pan: 'BBGHGJ8485',
+    isActive: false,
+    jobs: [
+        {title: 'Software Engineer', city: 'abc'},
+        {title: 'Consultant', city: 'def'},
+    ]
 }
 ```
 
-## License
+<img src="https://github.com/sudobird/react-json-viewer/blob/master/src/lib/docs/viewer.png?raw=true" height="400px"/> <img src="https://github.com/sudobird/react-json-viewer/blob/master/src/lib/docs/viewer.gif?raw=true" height="400px"/>
 
-MIT © [sudobird](https://github.com/sudobird)
+ 
